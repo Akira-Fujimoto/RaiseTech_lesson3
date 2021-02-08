@@ -1,0 +1,17 @@
+<h1>Recipes#index</h1>
+<p>トマトとチーズのスキレット焼き</p>
+<img src="/assets/tomato.jpeg" class="tomato">
+<table width="20%">
+    <tr>
+        <th>材料</th>
+        <th>分量</th>
+    </tr>
+    <% @recipes.each do |recipe| %>
+    <tr>
+        <div class="table">
+            <td><%= recipe.ingredient %></td>
+            <td><%= recipe.amount %></td>
+        </div>
+    </tr>
+    <% end %>
+</table>
